@@ -19,7 +19,7 @@ async def grp_cmds(client, message):
         return await message.reply_text('<b>ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀᴅᴍɪɴ ɪɴ ᴛʜɪꜱ ɢʀᴏᴜᴘ</b>')
     #title = message.chat.title
     buttons = [[
-                InlineKeyboardButton('❌ ᴄʟᴏsᴇ ❌', callback_data='close_data')
+                InlineKeyboardButton('✘ ᴄʟᴏsᴇ ✘', callback_data='close_data')
             ]]        
     await message.reply_text(
         text=script.GROUP_C_TEXT,
@@ -31,21 +31,19 @@ async def grp_cmds(client, message):
 @Client.on_message(filters.command("admin_cmds") & filters.user(ADMINS))
 async def admin_cmds(client, message):
     buttons = [
-        [KeyboardButton("/add_premium"), KeyboardButton("/premium_users")],
-        [KeyboardButton("/remove_premium"), KeyboardButton("/add_redeem")],
         [KeyboardButton("/refresh"), KeyboardButton("/set_muc")],
         [KeyboardButton("/pm_search_on"), KeyboardButton("/pm_search_off")],
         [KeyboardButton("/set_ads"), KeyboardButton("/del_ads")],
         [KeyboardButton("/setlist"), KeyboardButton("/clearlist")],
-        [KeyboardButton("/verify_id"), KeyboardButton("/index")],
+        [KeyboardButton("/index")],
         [KeyboardButton("/send"), KeyboardButton("/leave")],
         [KeyboardButton("/ban"), KeyboardButton("/unban")],
         [KeyboardButton("/broadcast"), KeyboardButton("/grp_broadcast")],
         [KeyboardButton("/delreq"), KeyboardButton("/channel")],
         [KeyboardButton("/del_file"), KeyboardButton("/delete")],
         [KeyboardButton("/deletefiles"), KeyboardButton("/deleteall")],
-        [KeyboardButton("All These Commands Can Be Used Only By Admins.")],
-        [KeyboardButton("⚡ powered by @JISSHU_BOTS")]
+        [KeyboardButton("ᴀʟʟ ᴛʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ᴏɴʟʏ ʙʏ ᴀᴅᴍɪɴꜱ.")],
+        [KeyboardButton("⚡ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴏᴠɪᴇ ᴠᴇʀꜱᴇ")]
     ]
     reply_markup = ReplyKeyboardMarkup(buttons, resize_keyboard=True, one_time_keyboard=True)
    
@@ -62,21 +60,18 @@ async def admin_cmds(client, message):
 @Client.on_message(filters.command("commands") & filters.user(ADMINS))
 async def set_commands(client, message):
     commands = [
-        BotCommand("start", "Start The Bot"),
-        BotCommand("most", "Get Most Searches Button List"),
-        BotCommand("trend", "Get Top Trending Button List"),
-        BotCommand("mostlist", "Show Most Searches List"),
-        BotCommand("trendlist", "𝖦𝖾𝗍 𝖳𝗈𝗉 𝖳𝗋𝖾𝗇𝖽𝗂𝗇𝗀 𝖡𝗎𝗍𝗍𝗈𝗇 𝖫𝗂𝗌t"),
-        BotCommand("plan", "Check Available Premium Membership Plans"),
-        BotCommand("myplan", "Check Your Currunt Plan"),
-        BotCommand("refer", "To Refer Your Friend And Get Premium"),
-        BotCommand("stats", "Check My Database"),
-        BotCommand("id", "Get Telegram Id"),
-        BotCommand("font", "To Generate Cool Fonts"),
-        BotCommand("details", "Check Group Details"),
-        BotCommand("settings", "Change Bot Setting"),
-        BotCommand("grp_cmds", "Check Group Commands"),
-        BotCommand("admin_cmds", "Bot Admin Commands")
+        BotCommand("start", "ꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ"),
+        BotCommand("most", "ɢᴇᴛ ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜᴇꜱ ʙᴜᴛᴛᴏɴ ʟɪꜱᴛ"),
+        BotCommand("trend", "ɢᴇᴛ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ʙᴜᴛᴛᴏɴ ʟɪꜱᴛ"),
+        BotCommand("mostlist", "ꜱʜᴏᴡ ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜᴇꜱ ʟɪꜱᴛ"),
+        BotCommand("trendlist", " ɢᴇᴛ ᴛᴏᴘ ᴛʀᴇɴᴅɪɴɢ ʙᴜᴛᴛᴏɴ ʟɪꜱᴛ"),
+        BotCommand("stats", "ᴄʜᴇᴄᴋ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ"),
+        BotCommand("id", "ɢᴇᴛ ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ"),
+        BotCommand("font", "ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴄᴏᴏʟ ꜰᴏɴᴛꜱ"),
+        BotCommand("details", "ᴄʜᴇᴄᴋ ɢʀᴏᴜᴘ ᴅᴇᴛᴀɪʟꜱ"),
+        BotCommand("settings", "ᴄʜᴀɴɢᴇ ʙᴏᴛ ꜱᴇᴛᴛɪɴɢ"),
+        BotCommand("grp_cmds", "ᴄʜᴇᴄᴋ ɢʀᴏᴜᴘ ᴄᴏᴍᴍᴀɴᴅꜱ"),
+        BotCommand("admin_cmds", "ʙᴏᴛ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ")
     ]
     await client.set_bot_commands(commands)
-    await message.reply("Set command successfully✅ ")
+    await message.reply("Set command successfully")
