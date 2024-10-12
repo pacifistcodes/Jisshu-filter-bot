@@ -122,7 +122,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot, skip):
                 if not media:
                     unsupported += 1
                     continue
-                elif media.mime_type not in ['video/mp4', 'video/x-matroska']:
+                elif media.mime_type not in ['video', 'document']:
                     unsupported += 1
                     continue
                 media.caption = message.caption
