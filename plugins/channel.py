@@ -20,7 +20,7 @@ media_filter = filters.document | filters.video
 async def media(bot, message):
     bot_id = bot.me.id
     media = getattr(message, message.media.value, None)
-    if media.mime_type in ['video/mp4', 'video/x-matroska']: 
+    if media.mime_type in ['video', 'document']: 
         media.file_type = message.media.value
         media.caption = message.caption
         success_sts = await save_file(media)
@@ -82,7 +82,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
         btn = [[
             InlineKeyboardButton('📂 ɢᴇᴛ ғɪʟᴇ 📂', url=f'https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}')
         ],[
-            InlineKeyboardButton('♻️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ♻️', url=f'https://t.me/JISSHU_BOTS')
+            InlineKeyboardButton('♻️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ♻️', url=f'https://t.me/movieverse_links')
         ]]
         reply_markup = InlineKeyboardMarkup(btn)
         if poster_url:
