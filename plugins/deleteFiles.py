@@ -11,7 +11,7 @@ media_filter = filters.document | filters.video | filters.audio
 @Client.on_message(filters.chat(DELETE_CHANNELS) & media_filter)
 async def deletemultiplemedia(bot, message):
     media = getattr(message, message.media.value, None)
-    if media.mime_type in ['video/mp4', 'video/x-matroska']: 
+    if media.mime_type in ['video', 'document']: 
         file_id, _ = unpack_new_file_id(media.file_id)
         try:
             result = await Media.find_one({"file_id": file_id})
