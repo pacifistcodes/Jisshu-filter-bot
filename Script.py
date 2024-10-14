@@ -1,6 +1,6 @@
 import os
 class script(object):
-    START_TXT = """<b>ᴡʜᴀᴛ's ᴜᴘ ᴄɪɴᴇᴍᴀ ʟᴏᴠᴇʀ ! ɪ'ᴍ ʏᴏᴜʀ ʙᴇʟᴏᴠᴇᴅ <a href=https://t.me/diamoviebot>ᴄᴀᴛʜᴇʀɪɴᴇ</a>.\n\nꜰᴀsᴛᴇɴ ʏᴏᴜʀ sᴇᴀᴛʙᴇʟᴛs! ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʙʀɪɴɢ ᴍᴏᴠɪᴇs ᴛᴏ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ꜰᴀsᴛᴇʀ ᴛʜᴀɴ ᴀ ʜᴏʟʟʏᴡᴏᴏᴅ ᴄᴀʀ ᴄʜᴀsᴇ. ʟᴇᴛ's ʀᴏʟʟ! 🚗💨\n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ <a href="https://t.me/moveverse_links">ᴍᴏᴠɪᴇ ᴠᴇʀꜱᴇ</a></blockquote></b>"""
+    START_TXT = """<b>ᴡʜᴀᴛ's ᴜᴘ ᴄɪɴᴇᴍᴀ ʟᴏᴠᴇʀ ! ɪ'ᴍ ʏᴏᴜʀ ʙᴇʟᴏᴠᴇᴅ <a href=https://t.me/diamoviebot>ᴄᴀᴛʜᴇʀɪɴᴇ</a>.\n\nꜰᴀsᴛᴇɴ ʏᴏᴜʀ sᴇᴀᴛʙᴇʟᴛs! ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʙʀɪɴɢ ᴍᴏᴠɪᴇs ᴛᴏ ʏᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ꜰᴀsᴛᴇʀ ᴛʜᴀɴ ᴀ ʜᴏʟʟʏᴡᴏᴏᴅ ᴄᴀʀ ᴄʜᴀsᴇ. ʟᴇᴛ's ʀᴏʟʟ! 🚗💨\n<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ <a href="https://t.me/movieverse_links">ᴍᴏᴠɪᴇ ᴠᴇʀꜱᴇ</a></blockquote></b>"""
     
     HELP_TXT = """<b>ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..</b>"""
     
