@@ -98,7 +98,7 @@ class script(object):
        ᴊᴏɪɴ➥「<a href='https://t.me/movieverse_links'>ᴍᴏᴠɪᴇ ᴠᴇʀꜱᴇ</a>」</b>"""
     
 
-    ALRT_TXT = """ᴍᴏᴠᴇ|ꜰᴏʀᴡᴀʀᴅ ꜰʀᴏᴍ ʜᴇʀᴇ !"""
+    ALRT_TXT = """ᴛʜɪꜱ ɪꜱ ꜱᴏᴍᴇᴏɴᴇ ᴇʟꜱᴇ ʀᴇQᴜᴇꜱᴛ , ʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ ᴏᴡɴ !"""
 
     OLD_ALRT_TXT = """ʏᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴍʏ ᴏʟᴅ ᴍᴇssᴀɢᴇs..sᴇɴᴅ ᴀ ɴᴇᴡ ʀᴇǫᴜᴇsᴛ.."""
 
